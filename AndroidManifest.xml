@@ -1,0 +1,319 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peiban"
+    android:versionCode="27"
+    android:versionName="2.9.8" 
+    android:installLocation="preferExternal"
+    >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <!-- 应用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_APN_STORAGE" />
+    <!-- WIFI信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 读取电话信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/ShanWuPanlvBaseTheme" 
+        android:allowTaskReparenting="true"
+        android:name=".application.PeibanApplication"
+        >
+        <activity
+            android:name=".app.ui.MainActivity"
+            android:screenOrientation="portrait" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".app.ui.IndexTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.LocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.NewProjectAlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name=".app.ui.UserBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".app.ui.ProjectImportActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".app.ui.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.TalkingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.EvaluateListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.MoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterValidateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.HeadAuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.StrangerChattingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.FriendFindPartnerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.FriendChattingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RotateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.StrangerFindPartnerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ProtocolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.MyChattingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.FriendListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterGrzlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterProtocolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterHeadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.RegisterHeadAuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ModifyPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.IndividualCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ChatListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.GetBackPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.EvaluateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.SessionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.PrivacyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ChatMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.AuthorizeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.NotifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ToCashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.MyFindPartnerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.MyPointActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.ConditionFilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.EditDataActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.FriendAlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.FriendPhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.GetBackPasswordValidateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.NewPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.ui.KitingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新建相册 -->
+         <activity android:name=".app.ui.NewAlbumActivity"
+             android:screenOrientation="portrait"></activity>
+         <!-- 地图 -->
+         <activity android:name=".app.ui.MapActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <activity android:name=".app.ui.ShowChatPhotoActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <!-- 城市 -->
+         <activity android:name=".app.ui.CityActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <activity android:name=".app.ui.SystemInfoShowActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <!-- 相片 -->
+         <activity android:name=".app.ui.PhotoActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+          <!-- 选择相片 -->
+         <activity android:name=".app.ui.SelectPhotoActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <!-- 修改相册 -->
+         <activity android:name=".app.ui.UpdateAlbumActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <!--vip筛选 -->
+         <activity android:name=".app.ui.ConditionFilterVipActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <activity android:name=".app.ui.ShowHeadActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+         <activity android:name=".app.ui.BuyVipActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+           <activity android:name=".app.ui.CurrentMapActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+           <activity android:name=".app.ui.DialogBitmapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogPrompt"
+            > </activity>
+           <!-- webview -->
+            <activity android:name=".app.ui.PanlvWebActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+            <!-- 陪聊用户积分 -->
+             <activity android:name=".app.ui.ChatPointActivity"
+            android:screenOrientation="portrait"
+            > </activity>
+        <!-- 聊天服务 -->
+        <service
+            android:name=".service.SnsService"
+            android:label="SnsService"
+            android:process=":push" >
+        </service>
+        <service android:name=".app.NotifiyService" />
+        <service android:name=".service.UpdateService" />
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>
