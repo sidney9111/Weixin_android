@@ -1,2 +1,2 @@
 # Weixin_android
-android client for lbs + im tools for freelancer
+android client of lbs + im tools which is benifit for freelancer themself
