@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PLDialogStyle"
+    android:orientation="vertical" >
+    
+   
+    <Button 
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_service_location_btn_intercourse"
+        style="@style/PLButton5"
+        android:text="@string/service_intercourse"
+        />
+   
+    <Button 
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_service_location_btn_single"
+        style="@style/PLButton5"
+        android:text="@string/service_single"
+        />
+ <Button 
+     android:layout_marginTop="10dp"
+        android:id="@+id/dialog_service_location_btn_undefind"
+        style="@style/PLButton5"
+        android:text="@string/service_undefind"
+        />
+</LinearLayout>

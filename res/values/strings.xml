@@ -1,0 +1,253 @@
+<resources>
+
+    <string name="album_add">添加相册</string>
+    <string name="album_prompt_tag">你还没有相册，不妨创建一个</string>
+    <string name="album_title">相册</string>
+    <string name="new_password_hint">输入新密码</string>
+    <string name="new_repassword_hint">确认新密码</string>
+    <string name="new_repassword_title">新密码</string>
+    <string name="title_more">更多</string>
+    <string name="location_distance">距离</string>
+    <string name="location_comprehensivescore">综合评分</string>
+    <string name="btn_save">保存</string>
+    <string name="location_title">附近用户</string>
+    <string name="location_right">筛选</string>
+    <string name="location_left">我的位置</string>
+    <string name="notify_title">通知</string>
+    <string name="authorize_title">授权用户</string>
+    <string name="toast_nocity">您没有选择城市信息</string>
+    <string name="session_title">会话</string>
+    <string name="update_success">修改成功</string>
+    <string name="session_title_more">编辑</string>
+    <string name="title_mypoint">我的积分 </string>
+    <string name="register_title">新用户</string>
+    <string name="login_title">奇骥</string>
+    <string name="app_name">奇骥</string>
+    <string name="update">修改</string>
+    <string name="hello_world">Hello woasdfasdfasdfasdfasfdasfdasfdsadfasdfasdfasfdsafasdfsfdsafdasfdsfsadfasdfasdfasdfasdfasrld!12311321321321321321321231321321321321231321231321231213213132132131321321321321321325648544544564564564564564564</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_preview">商务伴侣UI预览</string>
+    <string name="title_activity_main">商务伴侣</string>
+    <string name="txt_comfirm">确    定</string>
+    <string name="txt_cannel">取   消</string>
+    <string name="my_evaluate">我要评价</string>
+    <string name="btn_enter">确定</string>
+    <string name="btn_album_new">马上去创建</string>
+    <string name="btn_album_cancle">不需要相册</string>
+    <string name="btn_return">返回</string>
+    <string name="title_content_login">伴侣</string>
+    <string name="title_content_individual_center">个人中心</string>
+    <string name="remeber_password">记住密码</string>
+    <string name="unremeber_password">忘记密码?</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_new_user">新用户</string>
+    <string name="txt_user_name_tag">账号:</string>
+    <string name="txt_project_number">任务编号:</string>
+    <string name="txt_password_tag">密码:</string>
+    <string name="txt_phone_hint">输入手机号</string>
+    <string name="txt_projectimport_hint">输入八戒网任务编号</string>
+    <string name="txt_password_hint">请输入密码</string>
+    <string name="txt_register_phone_hint">输入手机号</string>
+    <string name="txt_register_password_hint">请输入密码</string>
+    <string name="location_load">正在获取定位信息......</string>
+    <string name="txt_register_repassword_hint">确认密码</string>
+    <string name="txt_register_recommended_hint">输入推荐人号码(会员或认证)</string>
+    <string name="txt_register_tag">填写推荐人手机号，您成为VIP会员后，推荐人和您可以返回10个积分。</string>
+    <string name="txt_protocol_tag">填写推荐人手机号，您成为VIP会员后，推荐人和您可以返回10个积分。
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议用户协议
+	    用户协议用户协议用户协议用户协议</string>
+    <string name="txt_protocol_check_tag">我已阅读用户协议</string>
+    <string name="protocol_btn_comfirm_tag">我同意</string>
+    <string name="protocol_btn_cnanel_tag">我不同意</string>
+    <string name="dialog_register_txt_title_tag">恭喜你，注册成功！</string>
+    <string name="register_validate_txt_validate_tag">请输入手机验证码</string>
+    <string name="chat_box_expra_expression">表情</string>
+    <string name="chat_box_expra_camera">相机</string>
+    <string name="chat_box_expra_pricture">图片</string>
+    <string name="chat_box_expra_location">位置</string>
+    <string name="register_grzl_must">*</string>
+    <string name="register_grzl_nickname">昵称:</string>
+    <string name="register_grzl_accout_type">帐号类型:</string>
+    <string name="register_grzl_service_location">服务场合:</string>
+    <string name="register_grzl_sex">性别:</string>
+    <string name="register_grzl_brith">出生年月:</string>
+    <string name="register_grzl_phone">联系电话:</string>
+    <string name="register_grzl_qq">QQ:</string>
+    <string name="register_grzl_height">身高(cm):</string>
+    <string name="register_grzl_body">体重(kg):</string>
+    <string name="register_grzl_profession">职业:</string>
+    <string name="register_grzl_wages">薪资意愿:</string>
+    <string name="register_grzl_signature">个性签名:</string>
+    <string name="register_head_btn_select_tag">使用相册</string>
+    <string name="register_head_btn_select_camera_tag">使用相机</string>
+    <string name="register_head_title_right_tag">下一步</string>
+    <string name="register_head_title_left_tag">跳过</string>
+    <string name="register_head_title">设置头像</string>
+    <string name="register_head_auth_btn_select_tag">照相</string>
+    <string name="register_head_auth_title_right_tag">下一步</string>
+    <string name="register_head_auth_title_left_tag">跳过</string>
+    <string name="register_head_auth_title">认证头像</string>
+    <string name="register_head_auth_tag">认证头像不显示在软件中，只作为系统管理员对照片的进行比对。</string>
+    <string name="toast_sdcard_mounted">SD卡拔出，不能使用某些功能!</string>
+    <string name="toast_sdcard_available">SD卡存储空间不足!</string>
+    <string name="toast_network">请检查网络是否连接正常!</string>
+    <string name="modify_password_edit_password_hint">输入原来的密码</string>
+    <string name="modify_password_edit_newpassword_hint">输入新密码</string>
+    <string name="modify_password_edit_renewpassword_hint">确定新密码</string>
+    <string name="modify_password_title">修改密码</string>
+    <string name="individual_centerActivity_title">个人中心</string>
+    <string name="individual_centerActivity_logining">注销</string>
+    <string name="individual_centerActivity_photo_tag">我的相册</string>
+    <string name="individual_centerActivity_location_tag">我的位置</string>
+    <string name="individual_centerActivity_hide_tag">隐私设置</string>
+    <string name="individual_centerActivity_info_tag">个人信息</string>
+    <string name="individual_centerActivity_sms_tag">短信推荐给好友</string>
+    <string name="individual_centerActivity_point_tag">我的积分</string>
+    <string name="individual_centerActivity_modify_password_tag">修改密码</string>
+    <string name="individual_centerActivity_more_tag">更多</string>
+    <string name="getback_password">找回密码</string>
+    <string name="detail_info_signature">签 名 ：</string>
+    <string name="detail_info_albums">相 册 ：</string>
+    <string name="detail_info_projects">项目：</string>
+    <string name="detail_info_qq">Q  Q ：</string>
+    <string name="detail_info_tall">身 高(cm) ：</string>
+    <string name="detail_info_weight">体 重(kg) ：</string>
+    <string name="detail_info_job">职 业 ：</string>
+    <string name="detail_info_mobilephone">手 机 号 码 ：</string>
+    <string name="detail_info_salary">薪 资 意 愿 ：</string>
+    <string name="detail_info_savor">兴 趣 爱 好 ：</string>
+    <string name="details_appearance_score_tag">外貌评分:</string>
+    <string name="details_service_score_tag">服务评分:</string>
+    <string name="details_charm_tag">魅力值:</string>
+    <string name="details_btn_auth">我要认证</string>
+    <string name="details_btn_vip">成为VIP</string>
+    <string name="authed_customer">授权用户</string>
+    <string name="privacy_search">禁止搜索到我</string>
+    <string name="privacy_head">头像</string>
+    <string name="privacy_albums">相册</string>
+    <string name="privacy_qq">QQ</string>
+    <string name="privacy_mobliephone">手机</string>
+    <string name="privacy_setting">隐私设置</string>
+    <string name="tocash">提现申请</string>
+    <string name="mypoint_auth">我要认证</string>
+    <!-- 充值页面 -->
+    <string name="mypoint_vipbuy">购买</string>
+    <string name="mypoint_viprecharge">充值</string>
+    <string name="mypoint_vipdeadline">会员期限:</string>
+    <string name="mypoint_point">积分</string>
+    <string name="mypoint_tocashpoint">可提现积分:</string>
+    <string name="mypoint_zhu">注:</string>
+    <string name="mypoint_eg">申请成为会员，可查看用户资料\n  优惠会员价：10元/月\n  1元对应一个积分\n  有任何疑问，详询QQ：1234567</string>
+    <!-- 条件筛选页面 -->
+    <string name="conditionfilter_title">筛选</string>
+    <string name="conditionfilter_sex">性别选择:</string>
+    <string name="conditionfilter_service">服务场合:</string>
+    <string name="conditionfilter_logintime">登录时间:</string>
+    <string name="conditionfilter_auth">是否认证:</string>
+    <string name="conditionfilter_broker">是否经纪人:</string>
+    <string name="conditionfilter_composite">是否有综合评分:</string>
+    <string name="conditionfilter_age">年龄:</string>
+    <string name="conditionfilter_distance">距离:</string>
+    <string name="conditionfilter_distanceone">Km</string>
+    <string name="conditionfilter_ageone">year</string>
+    <string name="conditionfilter_tall">身高:</string>
+    <string name="conditionfilter_tallone">cm</string>
+    <string name="conditionfilter_weight">体重:</string>
+    <string name="conditionfilter_weightone">kg</string>
+    <string name="conditionfilter_boy">男</string>
+    <string name="conditionfilter_girl">女</string>
+    <string name="conditionfilter_not">不限</string>
+    <string name="conditionfilter_social">工作室</string>
+    <string name="conditionfilter_alone">远程协助</string>
+    <string name="conditionfilter_online">30分钟内</string>
+    <string name="conditionfilter_threedday">1天内</string>
+    <string name="conditionfilter_sevenday">3天内</string>
+    <string name="conditionfilter_authed">已认证</string>
+    <string name="conditionfilter_notauth">未认证</string>
+    <string name="conditionfilter_yes">是</string>
+    <string name="conditionfilter_no">否</string>
+    <string name="conditionfilter_have">有</string>
+    <string name="conditionfilter_nothave">无</string>
+    <string name="issort">你逗我呢?后面的应该比前面的大</string>
+    <!-- 发布项目 -->
+    <string name="project_upload_title">发布项目</string>
+    <string name="project_apply">发布</string>
+    <!-- vip条件筛选 -->
+    <string name="conditionfilter_vip">是否vip</string>
+    <string name="conditionfilter_honor">荣誉值:</string>
+    <!-- 编辑资料页面 -->
+    <string name="editdata_title">编辑资料</string>
+    <string name="editdata_name">昵称:</string>
+    <string name="editdata_birthday">生日:</string>
+    <string name="editdata_service">服务场合:</string>
+
+    <string-array name="editdata_asalary">
+        <item>小时</item>
+        <item>天</item>
+    </string-array>
+
+    <string name="editdata_salary_hour">小时</string>
+    <string name="editdata_salary_day">天</string>
+    <string name="register_protocol_confirm_toast">请勾选同意注册协议</string>
+    <!-- 充值页面 -->
+    <string name="recharge_pay">银联支付</string>
+    <string name="service_undefind">不限</string>
+    <string name="service_single">单独</string>
+    <string name="service_intercourse">社交</string>
+    <string name="accout_chatiing">老师</string>
+    <string name="accout_withchat">学生</string>
+    <string name="toast_album">请输入相册名</string>
+    <string name="toast_photo">请输入照片名</string>
+    <string name="toast_albumbitmap">请选择封面</string>
+    <string name="toast_updatebitmap">封面未做更改</string>
+    <string name="toast_photobitmap">请选择照片</string>
+    <!-- 相册 -->
+    <string name="falbum_title">好友相册</string>
+    <string name="new_album">新建相册:</string>
+    <string name="album_name">相册名:</string>
+    <string name="album_cover">相册封面:</string>
+    <string name="album_privacy">相册隐私:</string>
+    <string name="no_album">本地缓存中没有相册</string>
+    <string name="album_update">修改相册</string>
+    <!-- 相片 -->
+    <string name="no_photo">秀秀自己的相片吧！</string>
+    <string name="add_photo">添加相片</string>
+    <string name="upload_photo">上传</string>
+    <string name="photo_name">相片名:</string>
+    <string name="photo_privacy">是否隐私:</string>
+    <string name="photo_auth">是否认证:</string>
+    <string name="photo_del">删除相片</string>
+    <string name="friend_photo_no">该用户还没有上传相片</string>
+    <string name="friend_album_no">该用户还没有上传相册</string>
+    <!-- 隐私设置 -->
+    <string name="privacy_all">所有人可见</string>
+    <string name="privacy_vip">vip/认证用户可见</string>
+    <string name="privacy_friend">好友可见</string>
+    <string name="privacy_set">请设置隐私信息</string>
+    <!-- 地图定位 -->
+    <string name="map_myloc">当前位置</string>
+    <string name="map_customloc">确定</string>
+    <string name="map_send">发送</string>
+    <!-- 我的积分弹出框 -->
+    <string name="point_record">积分记录</string>
+    <string name="point_rule">提现规则</string>
+    <string name="point_apply">申请提现</string>
+    <!-- 提现申请 -->
+    <string name="openbankname">开户银行全名：</string>
+    <string name="openname">开户名：</string>
+    <string name="account">帐号：</string>
+    <string name="openmobile">手机号:</string>
+    <string name="nobankname">开户银行名为空</string>
+    <string name="noopenname">开户名为空</string>
+    <string name="noaccount">帐号为空</string>
+    <string name="nophone">手机号为空</string>
+    <string name="phoneworng">手机号不正确</string>
+</resources>

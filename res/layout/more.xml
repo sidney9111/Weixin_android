@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+  
+     <LinearLayout 
+        style="@style/PLContentLayout"
+        >
+          <!-- 给我们好评 -->
+    <!-- 
+    <RelativeLayout android:id="@+id/more_layout_comment"
+          	 style="@style/more_item"
+            >
+            <ImageView 
+                android:id="@+id/more_img_comment"
+                android:src="@drawable/more_comment"
+                style="@style/more_item_img"
+                />
+            <TextView style="@style/more_text_tag"
+                android:text="@string/more_comment"
+                android:layout_toRightOf="@+id/more_img_comment"
+                android:layout_centerVertical="true"
+                />
+            <Button style="@style/PLNextButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+        <include layout="@layout/h_line"/>
+     -->
+         
+        <!-- 反馈意见 -->
+        <RelativeLayout android:id="@+id/more_layout_tickling"
+          	 style="@style/more_item"
+            >
+            <ImageView 
+                android:id="@+id/more_img_tickling"
+                android:src="@drawable/more_tickling"
+                style="@style/more_item_img"
+                />
+            <TextView style="@style/more_text_tag"
+                android:text="@string/more_tickling"
+                android:layout_toRightOf="@+id/more_img_tickling"
+                android:layout_centerVertical="true"
+                />
+            <Button style="@style/PLNextButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+        <include layout="@layout/h_line"/>
+        
+        <!-- 用户协议 -->
+        <RelativeLayout android:id="@+id/more_layout_protocol"
+          	 style="@style/more_item"
+            >
+            <ImageView 
+                android:id="@+id/more_img_protocol"
+                android:src="@drawable/more_protocol"
+                style="@style/more_item_img"
+                />
+            <TextView style="@style/more_text_tag"
+                android:text="@string/more_user_protocol"
+                android:layout_toRightOf="@+id/more_img_protocol"
+                android:layout_centerVertical="true"
+                />
+            <Button style="@style/PLNextButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+        <include layout="@layout/h_line"/>
+        
+        <!-- 检查更新 -->
+        <RelativeLayout android:id="@+id/more_layout_update"
+          	 style="@style/more_item"
+            >
+            <ImageView 
+                android:id="@+id/more_img_update"
+                android:src="@drawable/more_comment"
+                style="@style/more_item_img"
+                />
+            <TextView style="@style/more_text_tag"
+                android:text="@string/more_validate_update"
+                android:layout_toRightOf="@+id/more_img_update"
+                android:layout_centerVertical="true"
+                />
+            <Button style="@style/PLNextButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+        <include layout="@layout/h_line"/>
+        
+        <!-- 联系我们 -->
+        <RelativeLayout android:id="@+id/more_layout_contact_me"
+          	 style="@style/more_item"
+            >
+            <ImageView 
+                android:id="@+id/more_img_contact_me"
+                android:src="@drawable/more_contact_me"
+                style="@style/more_item_img"
+                />
+            <TextView style="@style/more_text_tag"
+                android:text="@string/more_contact_me"
+                android:layout_toRightOf="@+id/more_img_contact_me"
+                android:layout_centerVertical="true"
+                />
+            <Button style="@style/PLNextButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+        
+        <include layout="@layout/h_line"/>
+        	<TextView 
+                style="@style/more_item"
+                android:id="@+id/ver_tag"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+         <include layout="@layout/h_line"/>
+    </LinearLayout>
+</LinearLayout>

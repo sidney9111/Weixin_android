@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+            style="@style/PLLoginLayoutEditText" >
+
+            <TextView
+                style="@style/PLLoginText"
+                android:layout_width="wrap_content"
+                android:text="@string/txt_project_number"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt"
+                style="@style/PLLoginEditText"
+                android:hint="@string/txt_projectimport_hint"
+                 />
+        </LinearLayout>
+
+<Button style="@style/PLButton5"
+    android:text="导入"
+    android:layout_marginTop="5dp"
+    android:id="@+id/btnImport"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout style="@style/PLContentLayout" >
+
+            <RadioGroup
+                android:id="@+id/radio_credit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            </RadioGroup>
+            
+            <Button 
+                android:id="@+id/goumai"
+                style="@style/PLButton5"
+                android:text="确认购买"
+                android:onClick="onClick"
+                
+                android:layout_marginTop="35dp"
+                />
+            
+            <TextView 
+                android:id="@+id/miaoshu"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginTop="25dp"
+                
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

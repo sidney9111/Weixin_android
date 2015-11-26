@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_box_height">42dp</dimen>
+    <dimen name="chat_box_width">42dp</dimen>
+    <dimen name="album_view_width">55dp</dimen>
+    <dimen name="title_height">73dp</dimen>
+    
+    <dimen name="album_view_height">55dp</dimen>
+    <dimen name="pl_username_text_size">16sp</dimen>
+    <dimen name="pl_base_info_size">15sp</dimen>
+    <dimen name="pl_base_text_tag_size">13sp</dimen>    
+    <dimen name="pl_head_image_width_info">75dp</dimen>
+    <dimen name="pl_head_image_height_info">75dp</dimen>    
+    <dimen name="pl_head_image_width_h">65dp</dimen>
+    <dimen name="pl_head_image_height_h">65dp</dimen>    
+    <dimen name="pl_head_image_width_chat_h">56dp</dimen>
+    <dimen name="pl_head_image_height_chat_h">56dp</dimen>
+    
+    <dimen name="pl_head_image_width_s">40dp</dimen>
+    <dimen name="pl_head_image_height_s">40dp</dimen>
+    <dimen name="pl_img_tag_width">28dp</dimen>
+    <dimen name="pl_img_tag_height">28dp</dimen>
+    <dimen name="pl_emoji">20dp</dimen>
+    <dimen name="marigin">10dp</dimen>
+    <dimen name="photo_marigin">5dp</dimen>
+</resources>

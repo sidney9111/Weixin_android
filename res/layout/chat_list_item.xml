@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingTop="15dp"
+     android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/list_item_img_head"
+        android:layout_width="@dimen/pl_head_image_width_h"
+        android:layout_height="@dimen/pl_head_image_height_h"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/head_man"
+         />
+
+    <ImageView
+        android:id="@+id/list_item_img_subscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_item_img_head"
+         />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_list_line"
+        android:layout_toRightOf="@+id/list_item_img_head"
+          >
+
+        <!-- 一列 -->
+
+        <TextView
+            android:id="@+id/list_txt_title"
+            style="@style/list_item_txt_username"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_type"
+            style="@style/list_item_txt_tag"
+            android:layout_alignBaseline="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_txt_title"
+            android:background="@drawable/not_read_bg"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <!-- 2列 -->
+
+        <ImageView
+            android:id="@+id/list_img_sex"
+            style="@style/list_item_layout"
+            android:layout_below="@+id/list_txt_title"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_age"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_img_sex"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_location"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_txt_age"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_state"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_txt_location"
+             />
+
+        <!-- 3列 -->
+        <TextView
+            android:id="@+id/list_txt_message_info"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_img_sex"
+            android:layout_toLeftOf="@+id/list_txt_time"
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+             />
+        <!-- 右列 -->
+        <TextView
+            android:id="@+id/list_txt_time"
+            style="@style/list_item_txt_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            />
+         <Button
+            android:id="@+id/list_btn_del"
+            android:textSize = "14sp"
+	        style="@style/PLButtonFour"
+            android:background="@drawable/btn_logout_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="删除"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

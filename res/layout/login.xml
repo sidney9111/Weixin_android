@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+    <LinearLayout
+        style="@style/PLContentLayout" >
+
+        <!-- 用户名 -->
+
+        <LinearLayout
+            style="@style/PLLoginLayoutEditText" >
+
+            <TextView
+                style="@style/PLLoginText"
+                android:layout_width="wrap_content"
+                android:text="@string/txt_project_number"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/login_edit_username"
+                style="@style/PLLoginEditText"
+                android:hint="@string/txt_phone_hint"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <!-- 密码 -->
+
+        <LinearLayout
+            style="@style/PLLoginLayoutEditText">
+
+            <TextView
+                style="@style/PLLoginText"
+                android:layout_width="wrap_content"
+                android:text="@string/txt_password_tag"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/login_edit_password"
+                style="@style/PLLoginEditText"
+                android:hint="@string/txt_password_hint"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" >
+
+            <CheckBox
+                android:id="@+id/login_checkBox_remember_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remeber_password"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/login_unremember_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="@string/unremeber_password"
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login_btn_login"
+                style="@style/PLLoginButton"
+                android:background="@drawable/btn_login"
+                android:text="@string/btn_login" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                style="@style/PLLoginButton"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_register"
+                android:text="@string/btn_new_user" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

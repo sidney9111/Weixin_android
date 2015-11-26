@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginBottom="10dp"
+    >
+
+    <!-- 左边部分 -->
+
+    <ImageView
+        android:id="@+id/details_head_img_head"
+        android:layout_width="@dimen/pl_head_image_width_info"
+        android:layout_height="@dimen/pl_head_image_height_info"
+        android:layout_alignParentLeft="true"
+         />
+
+    <ImageView
+        android:id="@+id/details_head_img_subscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/details_head_img_head"
+        android:visibility="gone"
+        />
+
+    <!-- 认证的状态 -->
+
+    <TextView
+        android:id="@+id/details_head_txt_auth_state"
+        style="@style/list_item_txt_tag"
+        android:layout_width="@dimen/pl_head_image_width_h"
+        android:layout_below="@+id/details_head_img_head"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/green" />
+    <!-- 中间部分 -->
+    <!-- 1_1.姓名 -->
+
+    <TextView
+        android:id="@+id/details_head_txt_username"
+        style="@style/list_item_txt_username"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+         />
+    <!-- 1_2.性别 -->
+
+    <ImageView
+        android:id="@+id/details_head_img_sex"
+        style="@style/list_item_layout"
+        android:layout_toRightOf="@+id/details_head_txt_username"
+         />
+
+    <!-- 1_3.年龄 -->
+
+    <TextView
+        android:id="@+id/details_head_txt_age"
+        style="@style/list_item_txt_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_sex"
+        android:src="@drawable/sex_woman"
+         />
+    <!-- 1_4.年龄 -->
+
+    <TextView
+        android:id="@+id/details_head_txt_line_state"
+        style="@style/list_item_txt_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_txt_age"
+        android:src="@drawable/sex_woman"
+         />
+    
+    <!-- 2.1 外貌评分 Appearance score tag  -->
+    <TextView
+        android:id="@+id/details_head_txt_appearance_score_tag"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_username"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+        android:text="@string/details_appearance_score_tag" 
+        android:visibility="gone"
+        />
+    
+      <TextView
+        android:id="@+id/details_head_txt_appearance_score_num"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_username"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_layout_appearance_score_evaluate"
+        android:visibility="gone"
+        />
+    
+      <RatingBar
+	        android:id="@+id/details_head_layout_appearance_score_evaluate"
+	        style="@style/ratingbar_smallstyle"
+	        android:paddingTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/details_head_txt_appearance_score_tag"
+            android:layout_below="@+id/details_head_txt_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+        	android:rating="0"/>
+
+ <!-- 3.1 服务评分 service score tag  -->
+    <TextView
+        android:id="@+id/details_head_txt_service_score_tag"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_appearance_score_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+        android:text="@string/details_service_score_tag" 
+        android:visibility="gone"
+        />
+
+    <RatingBar
+        android:id="@+id/details_head_layout_service_score_evaluate"
+        style="@style/ratingbar_smallstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_head_txt_appearance_score_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_txt_service_score_tag"
+        android:paddingTop="5dp"
+        android:rating="5" 
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/details_head_txt_service_score_num"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_appearance_score_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_layout_service_score_evaluate"
+        android:visibility="gone"/>
+    
+     <!-- 4.1 评价的次数  -->
+     <TextView
+        android:id="@+id/details_head_txt_score_num"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_service_score_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+        android:visibility="gone"/>
+    
+    
+    <!-- 2_1.魅力值 Charm -->
+
+    <TextView
+        android:id="@+id/details_head_txt_charm"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_username"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+        android:text="@string/details_charm_tag" 
+        android:visibility="gone"
+        />
+     <!-- 2_2.等级 -->
+    <LinearLayout 
+        android:id="@+id/details_head_layout_class"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_head_txt_username"
+        android:layout_toRightOf="@+id/details_head_txt_charm"
+        android:layout_marginLeft="5dp"
+        >
+        
+    </LinearLayout>
+    <!-- 2_3.魅力值 charm_num -->
+    <TextView
+        android:id="@+id/details_head_charm_num"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_username"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_layout_class"
+        android:visibility="gone"
+        />
+    
+    <!-- 3_1.非Vip -->
+	<TextView
+        android:id="@+id/details_head_vip_state"
+        style="@style/list_item_txt_tag"
+        android:layout_below="@+id/details_head_txt_charm"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/details_head_img_head"
+         android:visibility="gone"/>
+	
+    <!-- 右边部分 -->
+    <Button
+        android:id="@+id/details_head_btn_auth"
+        style="@style/PLButtonFour"
+        android:layout_toRightOf="@+id/details_head_txt_service_score_num"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        />
+  <Button
+        android:id="@+id/details_head_btn_vip"
+        style="@style/PLButtonFour"
+        android:layout_toRightOf="@+id/details_head_charm_num"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

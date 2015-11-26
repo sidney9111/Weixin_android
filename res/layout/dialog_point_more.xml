@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="248dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+	<TextView 
+	    android:text="更多"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:textColor="@color/black"
+	    android:textSize="19.0dp"
+	    android:layout_gravity="left"
+	    android:layout_marginTop="10dp"
+	    />
+    <include layout="@layout/h_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/dialog_point_record"
+            style="@style/PLButton5"
+            android:text="@string/point_record"
+             />
+
+        <Button
+            android:id="@+id/dialog_point_rule"
+            android:layout_marginTop="5dp"
+            android:text="@string/point_rule"
+            style="@style/PLButton5" />
+        
+        <Button
+            android:id="@+id/dialog_point_apply"
+            style="@style/PLButton5"
+            android:layout_marginTop="5dp"
+            android:text="@string/point_apply"
+            android:layout_marginBottom="10dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout style="@style/PLContentLayout" >
+            <include layout="@layout/details_head"
+                />
+            
+            <include layout="@layout/details_apply"
+                />
+            
+            <include layout="@layout/details_info"
+                />
+            <include layout="@layout/details_info_hide"
+                />
+            
+            <Button 
+                android:id="@+id/details_apply_btn1"
+                	style="@style/PLButton5"
+                	android:layout_width="fill_parent"
+                	android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp"
+                	android:visibility="gone"
+                	android:text="@string/details_apply_btn1_tag"
+                />
+            
+            <Button android:id="@+id/details_btn_add_friend"
+                style="@style/PLButton5"
+                	android:layout_width="fill_parent"
+                	android:layout_marginTop="10dp"
+                	android:layout_marginBottom="15dp"
+                	android:visibility="gone"
+                	android:text="加好友"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

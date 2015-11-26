@@ -1,0 +1,44 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<style name="PLRegisterTextVivew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+    <!-- 注册个人资料着重标记-->
+    <style name="PLRegisterTextVivewMust" parent="@style/PLRegisterTextVivew">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:text">@string/register_grzl_must</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <!-- 注册个人资料标签 -->
+    <style name="PLRegisterTextViewTag" parent="@style/PLRegisterTextVivew">
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!-- 选项按钮 -->
+    <style name="PLRegisterGrzlButton">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/btn_select_normal</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- 布局 -->
+    <style name="PLLayoutEditText">
+        <item name="android:layout_height">40dp</item>      
+        <item name="android:background">@drawable/editview_bg</item>
+    </style>
+    <style name="RegisterGrzlEditView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">16.0dp</item>
+    </style>
+</resources>

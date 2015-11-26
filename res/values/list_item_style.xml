@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <style name="list_item_line">
+      <item name="android:layout_height">22dp</item>
+      <item name="android:paddingTop">2dp</item>
+      <item name="android:gravity">center</item>
+  </style>  
+  
+  <style name="list_item_layout" parent="@style/list_item_line">
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">wrap_content</item>
+  </style>  
+  
+  
+  <style name="list_item_txt_username" parent="@style/list_item_layout">
+      <item name="android:textColor">@color/pl_text_username_color</item>
+      <item name="android:layout_width">wrap_content</item>
+        <item name="android:maxWidth">86dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/pl_username_text_size</item>
+  </style>  
+  <style name="list_item_txt" parent="@style/list_item_layout">
+      <item name="android:textColor">@color/pl_base_info_color</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/pl_base_info_size</item>
+  </style>  
+  
+  <style name="list_item_txt_tag" parent="@style/list_item_txt">
+      <item name="android:textColor">@color/pl_base_tag_color</item>
+        <item name="android:textSize">@dimen/pl_base_text_tag_size</item>
+  </style>  
+</resources>

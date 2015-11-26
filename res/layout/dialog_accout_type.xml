@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PLDialogStyle"
+    android:orientation="vertical" >
+    
+   
+    <Button 
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_account_type_btn_withchat"
+        style="@style/PLButton5"
+        android:text="@string/accout_withchat"
+        />
+   
+    <Button 
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_account_type_btn_chatting"
+        style="@style/PLButton5"
+        android:text="@string/accout_chatiing"
+        />
+ 
+</LinearLayout>

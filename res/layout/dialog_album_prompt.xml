@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="248dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+	<TextView 
+	    android:text="相册"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:textColor="@color/black"
+	    android:textSize="19.0dp"
+	    android:layout_gravity="left"
+	    android:layout_marginTop="10dp"
+	    />
+    <include layout="@layout/h_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/dialog_album_prompt_confirm"
+            style="@style/PLButton5"
+             />
+
+        <Button
+            android:id="@+id/dialog_album_prompt_cannel"
+            android:layout_marginTop="5dp"
+            style="@style/PLButton5" />
+        
+        <Button
+            android:id="@+id/dialog_album_prompt_c"
+            style="@style/PLButton5"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="取消"
+             />
+    </LinearLayout>
+
+</LinearLayout>

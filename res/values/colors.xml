@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name="gray">#E4E4E4</color>
+    <color name="black">#000000</color>
+   <color name="white">#FFFFFF</color>
+    <color name="awhite">#FEFEFE</color>
+    <color name="huise">#DCDDDD</color>      
+    <color name="dark">#000000</color>  
+    <color name="red">#FF0000</color>  
+    <color name="green">#89C32F</color>
+    <color name="list_gray">#2f2f2f</color>
+    <color name="ablue">#250051FF</color>
+    <color name="adark">#83000000</color>
+    <color name="blue">#00A2E9</color>
+    <color name="linen">#FAF0E6</color>
+   <color name="dimgray">#696969</color>
+   <color name="tabp">#B2000000</color>
+   <color name="d_gray">#DEDCDD</color>
+   <color name="pink">#FA79AF</color>
+   <color name="textcolor">#1C1C1C</color>
+   <color name="transparent">#0000</color>
+   <color name="fense">#993399</color>
+   
+   <color name="pl_base_tag_color">#696969</color>
+   <color name="pl_base_info_color">#000000</color>
+   <color name="pl_text_username_color">#000000</color>
+</resources>

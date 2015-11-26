@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<style name="more_text_tag">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/dark</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_marginLeft">10dp</item>
+</style>
+
+<style name="more_item">
+        <item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:paddingTop">10dp</item>
+    	<item name="android:paddingBottom">10dp</item>
+    	<item name="android:clickable">true</item>
+</style>
+
+<style name="more_item_img">
+        <item name="android:layout_width">@dimen/pl_img_tag_width</item>
+    	<item name="android:layout_height">@dimen/pl_img_tag_height</item>
+    	<item name="android:layout_alignParentLeft">true</item>
+    	<item name="android:layout_centerVertical">true</item>
+    	<item name="android:layout_marginLeft">10dp</item>
+</style>
+</resources>

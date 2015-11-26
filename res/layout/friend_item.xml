@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <TextView
+        android:id="@+id/frienditem_catalog"
+        style="@style/PLListCatalog"
+        android:layout_height="wrap_content"
+        android:paddingRight="4.0dip"
+         />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/list_item_img_head"
+            android:layout_width="@dimen/pl_head_image_width_h"
+            android:layout_height="@dimen/pl_head_image_height_h"
+            android:layout_alignParentLeft="true"
+             />
+
+        <ImageView
+            android:id="@+id/list_item_img_subscript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/list_item_img_head"
+             />
+
+        <!-- 一列 -->
+
+        <TextView
+            android:id="@+id/list_txt_title"
+            style="@style/list_item_txt_username"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/list_item_img_head"
+            android:singleLine="true"
+            android:maxWidth="115dp"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_state"
+            style="@style/list_item_txt_tag"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_txt_title"
+            />
+
+        <!-- 2列 -->
+
+        <ImageView
+            android:id="@+id/list_img_sex"
+            style="@style/list_item_layout"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/list_item_img_head"
+            />
+
+        <TextView
+            android:id="@+id/list_txt_age"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_img_sex"
+             />
+
+        <TextView
+            android:id="@+id/list_txt_location"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_txt_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_txt_age"
+             />
+
+        <!-- 3列 -->
+
+        <TextView
+            android:id="@+id/list_txt_message_info"
+            style="@style/list_item_txt_tag"
+            android:layout_below="@+id/list_img_sex"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/list_btn_cannel_authorize"
+            android:layout_toRightOf="@+id/list_item_img_head"
+            android:singleLine="true"
+             />
+
+        <!-- 右列 -->
+
+        <Button
+            android:id="@+id/list_btn_cannel_authorize"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_four"
+            android:gravity="center"
+            android:text="取消好友"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

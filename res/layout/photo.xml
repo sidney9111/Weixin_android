@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+    <TextView 
+        android:id="@+id/photo_no"
+        style="@style/modle_style"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:layout_below="@+id/include1"
+        android:text="你还没有相片，不妨上传两张"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/photo_view"
+        style="@style/modle_style"
+        android:layout_below="@+id/include1"
+        >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

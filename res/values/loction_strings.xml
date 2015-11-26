@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location_zhpf">综合评分</string>
+    <string name="location_ryz">荣誉值</string>
+    <string name="location_fwpf">服务评分</string>
+    <string name="location_wmpf">外貌评分</string>
+</resources>

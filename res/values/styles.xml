@@ -1,0 +1,249 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    	<!-- 列表中. -->
+	   <style name="PLListCatalog">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff595c61</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#ffced2d7</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="popup_btn">
+	    <item name="android:paddingTop">5dp</item> 
+	    <item name="android:paddingBottom">5dp</item> 
+	    <item name="android:paddingLeft">15dp</item> 
+	    <item name="android:paddingRight">15dp</item> 
+	    <item name="android:textColor">@color/white</item> 
+	    <item name="android:textSize">18sp</item> 
+	    <item name="android:background">@drawable/bt_pupwind_style</item> 
+	    <item name="android:layout_height">40dp</item> 
+	    <item name="android:gravity">center</item> 
+	</style>
+	 <style name="MyDialog" parent="@style/DialogPrompt">
+    </style>
+     <style name="DialogPrompt" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <!--
+     无系统标题栏
+     <item name="android:visibility">gone</item>
+    -->
+    <style name="ShanWuPanlvBaseTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/base_bg</item>
+        <item name="android:checkboxStyle">@style/CheckBox</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:background">@drawable/check_style</item>
+        <item name="android:clickable">true</item>
+        <item name="android:width">20dp</item>
+        <item name="android:height">20dp</item>
+    </style>
+    <!-- 标题栏 -->
+    <style name="PLTitle">
+        <item name="android:textSize">18.0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 标题确定按钮 -->
+    <style name="PLTitleButton" parent="@style/PLTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">30.0dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- 标题返回按钮 -->
+    <style name="PLTitleButtonBack" parent="@style/PLTitleButton">
+        <item name="android:layout_width">58dp</item>
+    </style>
+
+    <!-- 登录输入文本框 -->
+    <style name="PLLoginText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PLLoginEditText" parent="PLLoginText">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="PLRegisterEditText" parent="@style/PLLoginText">
+        <item name="android:paddingTop">10.0dp</item>
+        <item name="android:paddingBottom">5.0dp</item>
+        <item name="android:background">@drawable/editview_bg</item>
+        <item name="android:layout_marginBottom">10.0dp</item>
+    </style>
+    <!-- 登录按钮 -->
+    <style name="PLLoginButton" parent="@style/PLButton"></style>
+
+    <style name="PLContentLayout">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PLChatExpraButton">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- 复选框 -->
+
+    <style name="PLButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">38.0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PLLoginLayoutEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/editview_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="PLTextView">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 个人中心区块布局 -->
+    <style name="PLIndividualCenterLayout">
+        <item name="android:background">@drawable/layout_content_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="PLIndividualCenterLayoutItem" parent="@style/PLIndividualCenterLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="PLIndividualCenterLayoutItemTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PLIndividualCenterLayoutItemImage">
+        <item name="android:layout_width">@dimen/pl_img_tag_width</item>
+        <item name="android:layout_height">@dimen/pl_img_tag_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="PLButtonThree" parent="@style/PLButton">
+        <item name="android:background">@drawable/btn_four</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">100.0dp</item>
+        <item name="android:layout_height">30.0dp</item>
+    </style>
+
+    <style name="PLButtonFour" parent="@style/PLButtonThree">
+        <item name="android:layout_width">82.0dp</item>
+    </style>
+    <!-- 固定组件宽高 -->
+    <style name="modle_style">
+         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+    <style name="modle_conditionfilter" parent="@style/modle_style">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+<style name="modle_fillstyle">
+    <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+</style>
+<style name="PromptButton">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38.0dp</item>
+        <item name="android:background">@drawable/layout_content_bg</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="PLButton5" parent="@style/PLButtonThree">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38.0dp</item>
+    </style>
+
+    <style name="PLListContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:transcriptMode">alwaysScroll</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@null</item>
+    </style>
+	<style name="PLNextButton" parent="@style/PLRegisterGrzlButton">
+	    <item name="android:layout_marginRight">5dp</item>
+	</style>
+	
+	<style name="PLLocationSelectLayout">
+	    <item name="android:layout_weight">0.5</item>
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">38dp</item>
+	</style>
+	
+	<style name="PLDialogStyle">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:background">@drawable/dialog_bg</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:padding">15dp</item>
+	</style>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/chat_box_action_bar_bg" >
+
+        <ToggleButton
+            android:id="@+id/chat_box_btn_info"
+            android:layout_width="42dp"
+            android:layout_height="@dimen/chat_box_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/toggle_chat_style"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+
+        <Button
+            android:id="@+id/chat_box_btn_add"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignBaseline="@+id/chat_box_btn_info"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chat_box_btn_info"
+            android:background="@drawable/btn_chat_box_add" />
+
+        <Button 
+            android:id="@+id/chat_box_btn_voice"
+            style="@style/PLButton5"
+            android:layout_toRightOf="@+id/chat_box_btn_add"
+            android:layout_alignBaseline="@+id/chat_box_btn_info"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_height="42dp"
+            android:text="按住说话"
+            android:visibility="gone"
+            />
+        <EditText
+            android:id="@+id/chat_box_edit_keyword"
+            android:layout_width="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/chat_box_height"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/chat_box_btn_send"
+            android:layout_toRightOf="@+id/chat_box_btn_add"
+            android:background="@drawable/chat_box_text_input_bg"
+            android:hint="输入消息"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:lines="4"
+            android:maxLength="400"
+            android:paddingLeft="8.0dp"
+            android:paddingRight="8.0dp"
+            android:textSize="16sp" 
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/chat_box_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/chat_box_height"
+            android:layout_alignBaseline="@+id/chat_box_btn_info"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_chat_box_send"
+            android:text="发送" 
+            />
+    </RelativeLayout>

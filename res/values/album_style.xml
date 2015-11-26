@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="album_hlinear" parent="@style/modle_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+    <style name="album_txt" parent="@style/modle_style">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="album_edit" parent="@style/modle_style">
+        <item name="android:minEms">10</item>
+        <item name="android:background">@drawable/editview_bg</item>
+        <item name="android:maxLength">15</item>
+    </style>
+    <style name="album_line" >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bline</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+</resources>

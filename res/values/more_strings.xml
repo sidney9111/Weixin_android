@@ -1,0 +1,9 @@
+<resources>
+<!-- 更多 -->
+    <string name="more_title">更多 </string>
+	<string name="more_comment">给我好评</string>
+	<string name="more_user_protocol">用户协议</string>
+	<string name="more_tickling">反馈意见</string>
+	<string name="more_validate_update">查验更新</string>
+	<string name="more_contact_me">联系我们</string>
+</resources>

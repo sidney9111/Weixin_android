@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative_distance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/location_select_bg"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/location_distance_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/distance_start" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="54dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="40.5dp"
+        android:layout_toRightOf="@+id/location_distance_0"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/location_distance_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_distance_0"
+        android:layout_toRightOf="@+id/line1"
+        android:background="@drawable/distance_normal" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="50dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="40.5dp"
+        android:layout_toRightOf="@+id/location_distance_5"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/location_distance_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_distance_0"
+        android:layout_toRightOf="@+id/line2"
+        android:background="@drawable/distance_normal" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="50dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="40.5dp"
+        android:layout_toRightOf="@+id/location_distance_10"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/location_distance_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_distance_0"
+        android:layout_toRightOf="@+id/line3"
+        android:background="@drawable/distance_normal" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="50dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="40.5dp"
+        android:layout_toRightOf="@+id/location_distance_20"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/location_distance_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_distance_0"
+        android:layout_toRightOf="@+id/line4"
+        android:background="@drawable/distance_end" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location_distance_20"
+        android:layout_alignLeft="@+id/location_distance_0"
+        android:text="0km"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location_distance_5"
+        android:layout_toLeftOf="@+id/line2"
+        android:text="5km"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location_distance_10"
+        android:layout_alignLeft="@+id/location_distance_10"
+        android:text="10km"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/location_distance_20"
+        android:text="20km"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location_distance_20"
+        android:layout_alignRight="@+id/location_distance_50"
+        android:text="50km"
+        android:textColor="#000000" />
+
+</RelativeLayout>

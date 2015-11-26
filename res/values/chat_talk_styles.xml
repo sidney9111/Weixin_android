@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="chat_talk_style_txt_time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/chat_talk_time_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="chat_talk_style_txt_img_head">
+        <item name="android:layout_width">@dimen/pl_head_image_width_chat_h</item>
+        <item name="android:layout_height">@dimen/pl_head_image_height_chat_h</item>
+    </style>
+    
+    <style name="chat_talk_style_txt_msg_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="chat_talk_style_txt_msg_info_msg_voice">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:maxWidth">50dp</item>
+        <item name="android:src">@drawable/chat_talk_voice</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="chat_talk_style_txt_msg_info_msg_photo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="chat_talk_style_txt_msg_info_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:textColor">@color/pl_base_info_color</item>
+        <item name="android:textSize">@dimen/pl_base_info_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    
+</resources>

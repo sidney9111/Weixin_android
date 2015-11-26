@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/include1" >
+
+        <LinearLayout
+            style="@style/modle_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            <LinearLayout style="@style/album_hlinear" >
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/album_txt"
+                    android:text="@string/album_name" />
+
+                <EditText 
+                   android:id="@+id/album_edit_name"
+                   style="@style/album_edit"
+                   android:layout_marginLeft="10dp" />
+            </LinearLayout>
+             <ImageView
+                 android:id="@+id/album_hliner"
+                style="@style/album_line" />
+
+            <LinearLayout
+                
+                style="@style/album_hlinear"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/img_recover"
+                    style="@style/album_txt"
+                    android:text="@string/album_cover" />
+
+                <ImageView 
+                    android:id="@+id/album_img_recover"
+                    style="@style/modle_style"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp" 
+                    android:src="@drawable/shakepic_noimage"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/album_line" 
+                android:visibility="gone"/>
+            <LinearLayout style="@style/album_hlinear" >
+                <TextView
+                    style="@style/album_txt"
+                    android:text="@string/album_privacy" 
+                    android:visibility="gone"/>
+                <CheckBox 
+                    android:id="@+id/album_check_privacy"
+                    style="@style/modle_style"
+                    android:background="@drawable/check_style"
+                    android:layout_marginLeft="10dp" 
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

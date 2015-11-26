@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 条件筛选页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/modle_conditionfilter" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+
+    <ScrollView
+        style="@style/modle_conditionfilter"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/include1" >
+
+        <LinearLayout
+            style="@style/modle_conditionfilter"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_sex" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_boy"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_boy" />
+
+                <Button
+                    android:id="@+id/filter_btn_gril"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_girl" />
+
+                <Button
+                    android:id="@+id/filter_btn_sexnot"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_service" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_social"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_alone" />
+
+                <Button
+                    android:id="@+id/filter_btn_alone"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_social" />
+
+                <Button
+                    android:id="@+id/filter_btn_servcenot"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_logintime" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_online"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.25"
+                    android:text="@string/conditionfilter_online" />
+
+                <Button
+                    android:id="@+id/filter_btn_threedday"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.25"
+                    android:text="@string/conditionfilter_threedday" />
+
+                <Button
+                    android:id="@+id/filter_btn_sevenday"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.25"
+                    android:text="@string/conditionfilter_sevenday" />
+
+                <Button
+                    android:id="@+id/filter_btn_linenot"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.25"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_auth" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_authed"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_authed" />
+
+                <Button
+                    android:id="@+id/filter_btn_notauth"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/btn_fiter_middle_style"
+                    android:text="@string/conditionfilter_notauth" />
+
+                <Button
+                    android:id="@+id/filter_btn_authnot"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_broker" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_yes"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_yes" />
+
+                <Button
+                    android:id="@+id/filter_btn_no"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_no" />
+
+                <Button
+                    android:id="@+id/filter_btn_brokernot"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/conditionfilter_small_txt"
+                android:text="@string/conditionfilter_composite" />
+
+            <LinearLayout style="@style/modle_conditionfilter" >
+
+                <Button
+                    android:id="@+id/filter_btn_have"
+                    style="@style/conditionfilter_btn_left_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_have" />
+
+                <Button
+                    android:id="@+id/filter_btn_havenot"
+                    style="@style/conditionfilter_btn_middle_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_nothave" />
+
+                <Button
+                    android:id="@+id/filter_btn_nothave"
+                    style="@style/conditionfilter_btn_right_style"
+                    android:layout_weight="0.3"
+                    android:text="@string/conditionfilter_not" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/conditionfilter_linearlayout" >
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:text="@string/conditionfilter_distance" />
+
+                <EditText
+                    android:id="@+id/filter_edit_distanceone"
+                    style="@style/conditionfilter_edit_style" />
+
+                <ImageView
+                    style="@style/conditionfilter_img_style"
+                    android:contentDescription="@drawable/bline" />
+
+                <EditText
+                    android:id="@+id/filter_edit_distancetwo"
+                    style="@style/conditionfilter_edit_style" />
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:text="@string/conditionfilter_distanceone" 
+                    android:layout_width="30dp"
+                    />
+
+                <Button
+                    android:id="@+id/filter_btn_distancerevoca"
+                    style="@style/conditionfilter_recvoabtn_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/conditionfilter_linearlayout" >
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:text="@string/conditionfilter_age" />
+
+                <EditText
+                    android:id="@+id/filter_edit_ageone"
+                    style="@style/conditionfilter_edit_style" />
+
+                <ImageView
+                    style="@style/conditionfilter_img_style"
+                    android:contentDescription="@drawable/bline" />
+
+                <EditText
+                    android:id="@+id/filter_edit_agetwo"
+                    style="@style/conditionfilter_edit_style" />
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    
+                    android:text="@string/conditionfilter_ageone" />
+
+                <Button
+                    android:id="@+id/filter_btn_agerevoca"
+                    style="@style/conditionfilter_recvoabtn_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/conditionfilter_linearlayout" >
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:text="@string/conditionfilter_tall" />
+
+                <EditText
+                    android:id="@+id/filter_edit_tallone"
+                    style="@style/conditionfilter_edit_style" />
+
+                <ImageView
+                    style="@style/conditionfilter_img_style"
+                    android:contentDescription="@drawable/bline" />
+
+                <EditText
+                    android:id="@+id/filter_edit_talltwo"
+                    style="@style/conditionfilter_edit_style" />
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:layout_width="30dp"
+                    android:text="@string/conditionfilter_tallone" />
+
+                <Button
+                    android:id="@+id/filter_btn_tallrevoca"
+                    style="@style/conditionfilter_recvoabtn_style" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/conditionfilter_linearlayout" >
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:text="@string/conditionfilter_weight" />
+
+                <EditText
+                    android:id="@+id/filter_edit_weightone"
+                    style="@style/conditionfilter_edit_style" />
+
+                <ImageView
+                    style="@style/conditionfilter_img_style"
+                    android:contentDescription="@drawable/bline" />
+
+                <EditText
+                    android:id="@+id/filter_edit_weighttwo"
+                    style="@style/conditionfilter_edit_style" />
+
+                <TextView
+                    style="@style/mypoint_small_txt"
+                    android:layout_width="30dp"
+                    android:text="@string/conditionfilter_weightone" />
+
+                <Button
+                    android:id="@+id/filter_btn_weightrevoca"
+                    style="@style/conditionfilter_recvoabtn_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+
+    <ListView
+        android:id="@+id/recharge_list"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/include1" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/recharge_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/recharge_list"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="@string/recharge_pay"
+        android:background="@drawable/btn_four" />
+
+</RelativeLayout>

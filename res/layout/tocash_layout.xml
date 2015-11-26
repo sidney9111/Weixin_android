@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1" >
+
+        <TableLayout
+            style="@style/PLContentLayout"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/mypoint_small_txt"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mypoint_tocashpoint" />
+
+                <TextView
+                    android:id="@+id/tocash_point_txt"
+                    style="@style/mypoint_small_txt"
+                    android:layout_marginRight="16dp" />
+            </TableRow>
+            <!-- 开户银行全名 -->
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/PLRegisterTextVivewMust"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/PLRegisterTextViewTag"
+                        android:text="@string/openbankname" />
+                </LinearLayout>
+
+                <RelativeLayout style="@style/PLLayoutEditText" >
+
+                    <EditText
+                        android:id="@+id/register_grzl_edit_bankname"
+                        style="@style/RegisterGrzlEditView"
+                        android:layout_toLeftOf="@+id/register_grzl_btn_select_nickname" />
+
+                    <Button
+                        android:id="@+id/register_grzl_btn_select_nickname"
+                        style="@style/PLRegisterGrzlButton" />
+                </RelativeLayout>
+            </TableRow>
+
+            <!-- 开户名 -->
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/PLRegisterTextVivewMust"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/PLRegisterTextViewTag"
+                        android:text="@string/openname" />
+                </LinearLayout>
+
+                <RelativeLayout style="@style/PLLayoutEditText" >
+
+                    <EditText
+                        android:id="@+id/register_grzl_edit_personname"
+                        style="@style/RegisterGrzlEditView" />
+                </RelativeLayout>
+            </TableRow>
+
+            <!-- 帐号 -->
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/PLRegisterTextVivewMust"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/PLRegisterTextViewTag"
+                        android:text="@string/account" />
+                </LinearLayout>
+
+                <RelativeLayout style="@style/PLLayoutEditText" >
+
+                    <EditText
+                        android:id="@+id/register_grzl_edit_account"
+                        style="@style/RegisterGrzlEditView" />
+                </RelativeLayout>
+            </TableRow>
+
+            <!-- 手机号 -->
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/PLRegisterTextVivewMust"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/PLRegisterTextViewTag"
+                        android:text="@string/openmobile" />
+                </LinearLayout>
+
+                <RelativeLayout style="@style/PLLayoutEditText" >
+
+                    <EditText
+                        android:id="@+id/register_grzl_edit_phone"
+                        style="@style/RegisterGrzlEditView" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/tocash_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/btn_two"
+        android:text="@string/btn_enter" />
+
+</RelativeLayout>

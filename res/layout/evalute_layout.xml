@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_layout"
+    android:orientation="horizontal" 
+    android:id="@+id/evalute_id"
+    >
+
+    <include layout="@layout/evaluate_tag" />
+
+    <include layout="@layout/evaluate_tag" />
+
+    <include layout="@layout/evaluate_tag" />
+
+    <include layout="@layout/evaluate_tag" />
+
+    <include layout="@layout/evaluate_tag" />
+
+</LinearLayout>

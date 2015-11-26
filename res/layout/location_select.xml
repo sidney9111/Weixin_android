@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_linear_select"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:descendantFocusability="blocksDescendants"
+    >
+    <!-- 距离 -->
+    <RelativeLayout
+        style="@style/PLLocationSelectLayout"
+        android:paddingLeft="20dp"
+        android:id="@+id/view_select_distance"
+        android:clickable="true"
+        >
+        <ImageView 
+            android:id="@+id/btn_select_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_select_pressed"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView android:id="@+id/location_txt_distance"
+            style="@style/PLTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/location_distance"
+            android:textSize="16.0dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/location_img_sort"
+            android:src="@drawable/location_asc"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/location_txt_distance"
+            />
+        
+    </RelativeLayout>
+	
+    <!-- 综合评分 -->
+    <RelativeLayout 
+         style="@style/PLLocationSelectLayout"
+         android:paddingRight="20dp"
+         android:id="@+id/view_select_score"
+        >
+        <TextView android:id="@+id/location_txt_comprehensivescore"
+            style="@style/PLTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="16.0dp"
+            />
+        <ImageView 
+            android:id="@+id/location_img_ssort"
+            android:src="@drawable/location_asc"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/location_txt_comprehensivescore"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView 
+            android:id="@+id/btn_select_srcoe"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_select_pressed"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sub_bg"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/dd_sub_scene"
+        style="@style/popup_btn"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:text="添加相册" >
+    </Button>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/pupwind_line" />
+
+    <Button
+        android:id="@+id/dd_sub_camera"
+        style="@style/popup_btn"
+        android:layout_width="fill_parent"
+        android:text="使用相机" >
+    </Button>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/pupwind_line" />
+
+    <Button
+        android:id="@+id/dd_sub_imgs"
+        style="@style/popup_btn"
+        android:layout_width="fill_parent"
+        android:text="浏览图库" >
+    </Button>
+
+</LinearLayout>

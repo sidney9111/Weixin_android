@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+	
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:background="@drawable/layout_content_bg"
+    android:layout_margin="10dp"
+	
+    android:orientation="vertical" >
+    <TextView
+            android:id="@+id/detail_info_signature"
+            style="@style/detail_info_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold" 
+            android:text="项目名称"/>
+
+      <LinearLayout       
+        style="@style/detail_info_line"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" 
+        >
+
+        	<ImageView
+        	    android:id="@+id/detail_project_img"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/logo" >
+
+			</ImageView>
+          	<TextView
+            android:id="@+id/detail_project_desc"
+            style="@style/detail_info_txt"
+            android:textSize="25dp"
+            android:textStyle="bold" 
+            android:text="hgahaha..."/>
+      </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

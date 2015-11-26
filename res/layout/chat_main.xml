@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/title" />
+
+    <ListView 
+    	android:id="@+id/chat_main_list_msg" 
+    	style="@style/PLListContent"
+    	android:scrollbars="vertical"  />
+      <include layout="@layout/chat_box"/>
+            
+	<include layout="@layout/chat_box_expra"
+	    />
+	<include layout="@layout/emoji_grid"/>
+</LinearLayout>

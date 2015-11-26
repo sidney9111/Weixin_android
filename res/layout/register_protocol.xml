@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 协议 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PLContentLayout" >
+
+    <EditText
+        android:id="@+id/edit_protocol"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_marginTop="18dp"
+        android:editable="false"
+        android:scrollHorizontally="true"
+        android:scrollbars="horizontal"
+        android:ems="10"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:paddingLeft="10dp"
+        >
+
+        <!-- 确认协议 -->
+
+        <CheckBox
+            android:id="@+id/protocol_check_confirm"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dp"
+            android:text="@string/txt_protocol_check_tag"
+            android:textColor="@color/dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" 
+        android:layout_marginBottom="20dp"
+        >
+
+        <Button
+            android:id="@+id/protocol_btn_confirm"
+            style="@style/PLLoginButton"
+            android:background="@drawable/btn_four"
+            android:text="@string/protocol_btn_comfirm_tag" />
+
+        <Button
+            android:id="@+id/protocol_btn_connel"
+            style="@style/PLLoginButton"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_four"
+            android:text="@string/protocol_btn_cnanel_tag" />
+    </LinearLayout>
+
+</LinearLayout>

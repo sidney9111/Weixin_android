@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <!-- 修改个人资料的修改性别 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/dialog_model_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/dialog_model_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@android:id/icon"
+            android:paddingBottom="3dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/dark"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dialog_model_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_model_title"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bline" />
+
+        <LinearLayout
+            android:id="@+id/dialog_model_content"
+            android:layout_below="@+id/dialog_model_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical" >
+            <EditText android:id="@+id/dialog_model_mark"
+                style="@style/PLTextView"
+                />
+            <Button 
+                android:layout_marginTop="15dp"
+                android:id="@+id/dialog_model_confirom"
+                android:text="确定"
+                style="@style/PLButton5"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

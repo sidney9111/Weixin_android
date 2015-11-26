@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+    <!-- 昵称 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            >
+
+            <LinearLayout style="@style/editdata_layout" >
+
+                <LinearLayout
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/editdata_name" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_name"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 生日 -->
+
+                <RelativeLayout
+                    android:id="@+id/editdata_layout_birthday"
+                    style="@style/detail_info_line"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/txt_birthday"
+                        style="@style/edit_txt"
+                        android:text="@string/editdata_birthday" />
+
+                    <TextView
+                        android:id="@+id/editdata_info_birthday"
+                        style="@style/editdata_edit"
+                        android:layout_toRightOf="@+id/txt_birthday" />
+
+                    <Button
+                        android:id="@+id/editdata_btn_brithday"
+                        style="@style/PLRegisterGrzlButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 服务场合 -->
+
+                <RelativeLayout
+                    android:id="@+id/editdata_layout_service"
+                    style="@style/detail_info_line"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/txt_service"
+                        style="@style/edit_txt"
+                        android:text="@string/editdata_service" />
+
+                    <TextView
+                        android:id="@+id/editdata_info_service"
+                        style="@style/editdata_edit"
+                        android:layout_toRightOf="@+id/txt_service" />
+
+                    <Button
+                        android:id="@+id/editdata_btn_service"
+                        style="@style/PLRegisterGrzlButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/editdata_layout" 
+                android:layout_height="wrap_content">
+
+                <!-- 签名 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_sign"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_signature" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_signature"
+                        android:maxLines="3"
+                        android:maxWidth="100dp"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 相册 -->
+ 	<LinearLayout
+        android:id="@+id/detail_layout_albums"
+        style="@style/detail_info_line" 
+        android:layout_height="65dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/edit_txt"
+            android:text="@string/detail_info_albums" />
+
+        <LinearLayout
+            android:id="@+id/editdata_layout_albums"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+<!--
+            <TextView
+                android:id="@+id/edit_photo_no"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:hint="@string/no_album" />
+            <ImageView
+                android:id="@+id/edit_photo_one"
+               android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photho_ioc" />
+
+            <ImageView
+                android:id="@+id/edit_photo_two"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photho_ioc" />
+
+            <ImageView
+                android:id="@+id/edit_photo_three"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photho_ioc" />
+
+            <ImageView
+                android:id="@+id/edit_photo_four"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photho_ioc" />
+             -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/details_btn_into"
+            style="@style/PLRegisterGrzlButton"
+            android:visibility="visible" />
+    </LinearLayout>
+
+                <include layout="@layout/h_line" />
+               
+                <!-- 身高 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_tall"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_tall" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_tall"
+                        android:inputType="number"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 体重 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_weight"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_weight" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_weight"
+                        android:inputType="number"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 职位 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_job"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_job" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_job"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 手机 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_mobilephone"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_mobilephone" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_mobilephone"
+                        android:inputType="number"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                 <!-- qq -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_qq"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_qq" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_qq"
+                        android:inputType="number"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+
+                <include layout="@layout/h_line" />
+                
+                <!-- 薪资意愿 -->
+
+                <RelativeLayout
+                    android:id="@+id/editdata_layout_salary"
+                     style="@style/detail_info_line"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/text_salary"
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_salary" />
+
+                    <TextView
+                        android:id="@+id/editdata_info_salary"
+                        style="@style/editdata_edit"
+                        android:layout_toRightOf="@+id/text_salary" />
+
+                    <Button
+                        android:id="@+id/details_btn_salary"
+                        style="@style/PLRegisterGrzlButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 兴趣爱好 -->
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_savor"
+                    style="@style/detail_info_line"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/edit_txt"
+                        android:text="@string/detail_info_savor" />
+
+                    <EditText
+                        android:id="@+id/editdata_info_savor"
+                        style="@style/editdata_edit" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

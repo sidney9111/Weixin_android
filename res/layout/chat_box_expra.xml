@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_box_layout_expra"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:visibility="gone"
+    android:orientation="horizontal" 
+    android:background="@drawable/chat_box_expra_bar_bg"
+    android:gravity="center|left"
+    >
+    <Button android:id="@+id/chat_box_expra_btn_experssion"
+        style="@style/PLChatExpraButton"
+        android:text="@string/chat_box_expra_expression"
+        android:drawableTop="@drawable/btn_chat_box_expression"
+        />
+    <Button android:id="@+id/chat_box_expra_btn_camera"
+        style="@style/PLChatExpraButton"
+        android:text="@string/chat_box_expra_camera"
+        android:drawableTop="@drawable/btn_chat_box_camera"
+        />
+    <Button android:id="@+id/chat_box_expra_btn_picture"
+        style="@style/PLChatExpraButton"
+        android:text="@string/chat_box_expra_pricture"
+        android:drawableTop="@drawable/btn_chat_box_picture"
+        />
+    <Button android:id="@+id/chat_box_expra_btn_location"
+        style="@style/PLChatExpraButton"
+        android:text="@string/chat_box_expra_location"
+        android:drawableTop="@drawable/btn_chat_box_location"
+        />
+    
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/PLContentLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/PLIndividualCenterLayout"
+                android:orientation="vertical" >
+
+                <!-- 个人信息 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_info"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_info"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_info" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_info"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_info"
+                        android:layout_toRightOf="@+id/individual_center_img_info"
+                        android:text="@string/individual_centerActivity_info_tag" />
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_head"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/individual_center_btn_info"
+                         />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_info"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+
+                <!-- 我的相册 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_photo"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_photo"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_photo" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_photo"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_photo"
+                        android:layout_toRightOf="@+id/individual_center_img_photo"
+                        android:text="@string/individual_centerActivity_photo_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_photo"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+                <!-- 我的位置 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_location"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_location"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_location" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_location"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_location"
+                        android:layout_toRightOf="@+id/individual_center_img_location"
+                        android:text="@string/individual_centerActivity_location_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_location"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+
+                <!-- 隐私设置 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_hide"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_hide"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_hide" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_hide"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_hide"
+                        android:layout_toRightOf="@+id/individual_center_img_hide"
+                        android:text="@string/individual_centerActivity_hide_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_hide"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            
+            <LinearLayout
+                style="@style/PLIndividualCenterLayout"
+                android:orientation="vertical" >
+
+                <!-- 短信推荐给好友 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_sms"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_sms"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_sms" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_sms"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_sms"
+                        android:layout_toRightOf="@+id/individual_center_img_sms"
+                        android:text="@string/individual_centerActivity_sms_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_sms"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+
+                <!-- 我的积分 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_point"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_point"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_point" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_point"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_point"
+                        android:layout_toRightOf="@+id/individual_center_img_point"
+                        android:text="@string/individual_centerActivity_point_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_point"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+
+                <!-- 修改密码 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_modify_password"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_modify_password"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_lock" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_modify_password"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_modify_password"
+                        android:layout_toRightOf="@+id/individual_center_img_modify_password"
+                        android:text="@string/individual_centerActivity_modify_password_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_modify_password"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <include layout="@layout/h_line" />
+
+                <!-- 更多 -->
+
+                <RelativeLayout 
+                    android:id="@+id/individual_center_item_more"
+                    style="@style/PLIndividualCenterLayoutItem" >
+
+                    <ImageView
+                        android:id="@+id/individual_center_img_more"
+                        style="@style/PLIndividualCenterLayoutItemImage"
+                        android:src="@drawable/individual_center_more" />
+
+                    <TextView
+                        android:id="@+id/individual_center_txt_more"
+                        style="@style/PLIndividualCenterLayoutItemTextView"
+                        android:layout_alignBaseline="@+id/individual_center_img_more"
+                        android:layout_toRightOf="@+id/individual_center_img_more"
+                        android:text="@string/individual_centerActivity_more_tag" />
+
+                    <Button
+                        android:id="@+id/individual_center_btn_more"
+                        style="@style/PLNextButton"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

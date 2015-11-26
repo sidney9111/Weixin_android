@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/layout_content_bg"
+    android:orientation="vertical" >
+
+    <!-- 签名 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_sign"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_signature" />
+
+        <TextView
+            android:id="@+id/detail_info_signature"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 相册 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_albums"
+        style="@style/detail_info_line"
+        android:layout_height="65dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_albums" />
+		
+        <TextView 
+            android:id="@+id/details_layout_albums_tag"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:textColor="@color/fense"
+            android:textSize="17dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/details_layout_albums"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+             >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/details_btn_into"
+            style="@style/PLRegisterGrzlButton"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+   <!-- 项目 -->
+   <LinearLayout
+        android:id="@+id/detail_layout_albums"
+        style="@style/detail_info_line"
+        android:layout_height="65dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_projects" />
+		
+        <LinearLayout
+            android:id="@+id/details_layout_albums"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+             >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/details_btn_inproject"
+            style="@style/PLRegisterGrzlButton"
+            android:visibility="visible" />
+    </LinearLayout>
+    
+   <include layout="@layout/h_line" />
+    <!-- 身高 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_tall"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_tall" />
+
+        <TextView
+            android:id="@+id/detail_info_tall"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 体重 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_weight"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_weight" />
+
+        <TextView
+            android:id="@+id/detail_info_weight"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 职位 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_job"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_job" />
+
+        <TextView
+            android:id="@+id/detail_info_job"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 手机 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_mobilephone"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_mobilephone" />
+
+        <TextView
+            android:id="@+id/detail_info_mobilephone"
+            style="@style/detail_info_txt" 
+            android:textColor="@color/fense"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    
+      <!-- qq -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_qq"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_qq" />
+
+        <TextView
+            android:id="@+id/detail_info_qq"
+            style="@style/detail_info_txt" 
+            android:textColor="@color/fense"/>
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 薪资意愿 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_salary"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_salary" />
+
+        <TextView
+            android:id="@+id/detail_info_salary"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+    <include layout="@layout/h_line" />
+    <!-- 兴趣爱好 -->
+
+    <LinearLayout
+        android:id="@+id/detail_layout_savor"
+        style="@style/detail_info_line"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/detail_info_txt"
+            android:text="@string/detail_info_savor" />
+
+        <TextView
+            android:id="@+id/detail_info_savor"
+            style="@style/detail_info_txt" />
+    </LinearLayout>
+
+</LinearLayout>

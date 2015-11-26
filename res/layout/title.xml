@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_title"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/top"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- 标题左边的按钮 -->
+
+    <Button
+        android:id="@+id/title_back"
+        style="@style/PLTitleButtonBack"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/btn_back_style"
+        android:text="@string/title_btn_back" />
+
+    <Button
+        android:id="@+id/title_left"
+        style="@style/PLTitleButton"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/btn_action_style" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 适中字体标题 -->
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/PLTitle"
+                android:text="@string/app_name" />
+            <!-- 相册对应的列表数 -->
+
+            <TextView
+                android:id="@+id/title_num"
+                style="@style/PLTitle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/title_img"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone" />
+            <!-- 选择框 -->
+            <Button
+                android:id="@+id/title_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 标题右边按钮 -->
+
+    <Button
+        android:id="@+id/title_right"
+        style="@style/PLTitleButton"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_action_style"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:attr/progressBarStyleSmallInverse"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>

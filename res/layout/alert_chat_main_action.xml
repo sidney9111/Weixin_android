@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="vertical" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    
+    <Button android:id="@+id/alert_chat_main_btn_delmsg"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="删除消息"
+        />
+    
+    <Button android:id="@+id/alert_chat_main_btn_resend"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="重新发送"
+        />
+    
+     <Button 
+         android:layout_marginTop="5dp"
+         android:id="@+id/alert_chat_main_btn_cancel"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="取消"
+        />
+
+</LinearLayout>

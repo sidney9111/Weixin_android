@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="2dp" >
+
+    <TextView
+        android:id="@+id/chat_talk_txt_time"
+        style="@style/chat_talk_style_txt_time"
+         />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/chat_talk_img_head"
+        style="@style/chat_talk_style_txt_img_head"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chat_talk_txt_time"
+        />
+
+    <LinearLayout
+        android:id="@+id/chat_talk_msg_info"
+        style="@style/chat_talk_style_txt_msg_info"
+        
+        android:layout_below="@+id/chat_talk_txt_time"
+        android:layout_toRightOf="@+id/chat_talk_img_head"
+        android:background="@drawable/chat_talk_left_bg"
+        android:minHeight="65dp"
+        >
+        <ImageView
+            android:id="@+id/chat_talk_msg_info_msg_voice"
+            style="@style/chat_talk_style_txt_msg_info_msg_voice"
+            android:src="@drawable/anim_btn_audio_play1"
+            android:scaleType="matrix"
+            android:paddingLeft="10dp"
+            android:minWidth="100dp"
+            />
+
+        <ImageView
+            android:id="@+id/chat_talk_msg_info_msg_photo"
+            style="@style/chat_talk_style_txt_msg_info_msg_photo"
+            android:layout_margin="3dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            />
+
+        <TextView
+            android:id="@+id/chat_talk_msg_info_text"
+            style="@style/chat_talk_style_txt_msg_info_text"
+            android:text="@string/hello_world" 
+            android:minWidth="100dp"
+            
+            />
+       <TextView 
+            android:id="@+id/chat_talk_msg_map"
+            android:layout_width="wrap_content"
+            android:maxWidth="130dp"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/location_msg"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/chat_talk_voice_num"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chat_talk_msg_info"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="-25dp"
+        android:layout_below="@+id/chat_talk_txt_time"
+        />
+
+</RelativeLayout>

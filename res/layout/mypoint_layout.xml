@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/list_item_img_head"
+        android:layout_width="@dimen/pl_head_image_width_h"
+        android:layout_height="@dimen/pl_head_image_height_h"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+         />
+
+    <ImageView
+        android:id="@+id/list_item_img_subscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_item_img_head"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/subscript_vip"
+        android:visibility="gone"
+         />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/list_item_img_head" >
+
+        <!-- 一列 -->
+
+        <TextView
+            android:id="@+id/point_txt_title"
+            style="@style/mypoint_large_txt"
+            android:singleLine="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/list_layout_evaluate"
+            style="@style/list_item_layout"
+            android:layout_toRightOf="@+id/list_txt_title"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <!-- 2列 -->
+
+        <ImageView
+            android:id="@+id/list_img_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_below="@+id/point_txt_title"
+             />
+
+        <TextView
+            android:id="@+id/point_txt_age"
+            style="@style/mypoint_small_txt"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/list_img_sex"
+            android:layout_below="@+id/point_txt_title"
+            />
+
+        <!-- 3列 -->
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/mypoint_small_txt"
+            android:layout_alignBottom="@+id/point_txt_title"
+            android:layout_toLeftOf="@+id/point_txt"
+            android:text="@string/mypoint_point" />
+
+        <TextView
+            android:id="@+id/point_txt"
+            style="@style/mypoint_small_txt"
+            android:layout_above="@+id/list_img_sex"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/point_img_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/mypoint_small_txt"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_toLeftOf="@+id/tocash_point_txt"
+        android:text="@string/mypoint_tocashpoint" />
+
+    <TextView
+        android:id="@+id/tocash_point_txt"
+        style="@style/mypoint_small_txt"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/mypoint_small_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/list_item_img_head"
+        android:layout_marginLeft="5dp"
+        android:text="@string/mypoint_vipdeadline" />
+
+    <TextView
+        android:id="@+id/vip_time_txt"
+        style="@style/mypoint_small_txt"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+         />
+
+    
+    <Button
+        android:id="@+id/point_btn_buy"
+        style="@style/mypoint_btn_style"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_four"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mypoint_vipbuy" />
+
+    <Button
+        android:id="@+id/point_btn_recharge"
+        style="@style/mypoint_btn_style"
+        android:layout_alignBaseline="@+id/point_btn_buy"
+        android:layout_alignBottom="@+id/point_btn_buy"
+        android:layout_alignRight="@+id/tocash_point_txt"
+        android:background="@drawable/btn_four"
+        android:visibility="gone"
+        android:text="@string/mypoint_viprecharge" />
+
+    <TextView
+        android:id="@+id/mypoint_eg"
+        style="@style/mypoint_small_txt"
+        android:layout_below="@+id/point_btn_recharge"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mypoint_txt"
+         />
+
+    <TextView
+        android:id="@+id/mypoint_txt"
+        style="@style/mypoint_small_txt"
+        android:layout_alignBaseline="@+id/mypoint_eg"
+        android:layout_alignBottom="@+id/mypoint_eg"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="@string/mypoint_zhu" />
+
+</RelativeLayout>

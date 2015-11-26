@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="vertical" >
+    
+    <Button android:id="@+id/alert_chat_main_more_addfriend"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="添加好友"
+        android:visibility="gone"
+        />
+    <Button android:id="@+id/alert_chat_main_more_apply"
+        android:layout_marginTop="5dp"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="申请查看"
+        android:visibility="gone"
+        />
+     <Button 
+         android:layout_marginTop="5dp"
+         android:id="@+id/alert_chat_main_more_btn_clear"
+        style="@style/PLButton5"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:text="清空聊天"
+        />
+
+</LinearLayout>

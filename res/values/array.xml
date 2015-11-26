@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array  name="editdata_salary">
+        <item>元/天</item>
+        <item>元/小时</item>
+    </string-array>
+</resources>
