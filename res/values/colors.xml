@@ -20,7 +20,8 @@
    <color name="textcolor">#1C1C1C</color>
    <color name="transparent">#0000</color>
    <color name="fense">#993399</color>
-   
+   <color name="linkgrey">#c0c5c8</color>
+   <color name="buttonblue">#4fc1e9</color>
    <color name="pl_base_tag_color">#696969</color>
    <color name="pl_base_info_color">#000000</color>
    <color name="pl_text_username_color">#000000</color>
